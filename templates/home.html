@@ -1,11 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>블로그</title>
+    <style>
+        button {
+            color : white;
+            font-weight: bold;
+            box-sizing : border-box;
+            width : 90px;
+            height : 30px;
+            background-color: rgb(74, 227, 74);
+            border: 5px solid rgb(74, 227, 74);
+            border-radius : 10px;
+            margin : auto;
+            display: block;
+        }
+        button:hover {
+            background-color: rgb(64, 144, 64);
+            border : 5px solid rgb(64, 144, 64);
+        }
+        a{
+            box-sizing : border-box;
+            width : 110px;
+            height : 30px;
+            font-size: 12px;
+            margin : auto;
+            display: block;
+        }
+        a:visited{
+            color : blue
+        }
+    </style>
 </head>
 <body>
-    <button onclick="window.location.href='sign_in'">회원가입</button><br>
+    <div>
+        <button onclick="window.location.href='sign_in'">회원가입</button><br>
+        <a href="/blog/login" >이미 회원이신가요?</a>
+    </div>
 </body>
 </html>

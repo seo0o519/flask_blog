@@ -9,3 +9,7 @@ def home():
 @blog.route('/sign_in')
 def sign_in():
     return render_template('sign_in.html')
+
+@blog.route('/login')
+def login():
+    return render_template('login.html')
